@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://jichangclash.github.io/news/article-112611.htm" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>如何在V2RayNG中添加SSR节点：详细步骤与常见问题解析</title>
+        <meta name="description" content="在当今互联网时代，越来越多的用户选择通过代理服务器保护自己的隐私并访问被限制的网站。V2RayNG 是一个功能强大的 Android 平台上的网络代理工具，广泛应用于科学上网的场景。与传统的 Shad" />
+        <link rel="icon" href="/assets/website/img/clashnodegithub/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费Clash机场 节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jichangclash.github.io/news/article-112611.htm" />
+    <meta property="og:site_name" content="免费Clash机场 节点官网" />
+    <meta property="og:title" content="如何在V2RayNG中添加SSR节点：详细步骤与常见问题解析" />
+    <meta property="og:image" content="https://jichangclash.github.io/uploads/20240611/b936ab3ed22862e6ceefd413bca1a42c.webp" />
+        <meta property="og:release_date" content="2025-05-07T08:54:01" />
+    <meta property="og:updated_time" content="2025-05-07T08:54:01" />
+        <meta property="og:description" content="在当今互联网时代，越来越多的用户选择通过代理服务器保护自己的隐私并访问被限制的网站。V2RayNG 是一个功能强大的 Android 平台上的网络代理工具，广泛应用于科学上网的场景。与传统的 Shad" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="/assets/website/css/clashnodegithub/bootstrap-5.0.0-beta2.min.css" />
+    <link rel="stylesheet" href="/assets/website/css/clashnodegithub/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="/assets/website/css/clashnodegithub/tiny-slider.css" />
+    <link rel="stylesheet" href="/assets/website/css/clashnodegithub/animate.css" />
+    <link rel="stylesheet" href="/assets/website/css/clashnodegithub/main.css" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="如何在V2RayNG中添加SSR节点：详细步骤与常见问题解析">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T69C5TKJHY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T69C5TKJHY');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner-container">
+                    <div class="spinner-rotator">
+                        <div class="spinner-left">
+                            <div class="spinner-circle"></div>
+                        </div>
+                        <div class="spinner-right">
+                            <div class="spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+    <!-- ========================= header start ========================= -->
+    <header class="header">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                                                            <a class="navbar-brand" href="/">免费Clash机场</a>
+                                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <div class="ms-auto">
+                                    <ul id="nav" class="navbar-nav ms-auto">
+                                                                                <li class="nav-item">
+                                            <a href="/">首页</a>
+                                        </li>
+                                                                                <li class="nav-item">
+                                            <a href="/paid-subscribe/">推荐机场</a>
+                                        </li>
+                                                                                <li class="nav-item">
+                                            <a href="/news/">新闻资讯</a>
+                                        </li>
+                                                                                <li class="nav-item">
+                                            <a href="/client.htm">客户端</a>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                            <!-- navbar collapse -->
+                        </nav>
+                        <!-- navbar -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- navbar area -->
+    </header>
+    <!-- ========================= header end ========================= -->
+    <!-- ========================= hero-section start ========================= -->
+    <section id="home" class="hero-section">
+        <div class="hero-wrapper" style="height: 250px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-10">
+                        <div class="hero-content">
+                            <h1>如何在V2RayNG中添加SSR节点：详细步骤与常见问题解析</h1>
+                            <p>
+                                <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= hero-section end ========================= -->
+    <!-- ========================= about-section start ========================= -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="34" data-end="218" class="">在当今互联网时代，越来越多的用户选择通过代理服务器保护自己的隐私并访问被限制的网站。V2RayNG 是一个功能强大的 Android 平台上的网络代理工具，广泛应用于科学上网的场景。与传统的 Shadowsocks（SS）相比，V2RayNG 提供了更多的协议支持和更高的灵活性，尤其在支持 SSR（ShadowsocksR）节点的情况下，能够有效提升用户的网络体验。</p>
+<p data-start="220" data-end="301" class="">本文将详细介绍如何在 V2RayNG 中添加 SSR 节点的具体步骤，同时解答一些常见问题，帮助用户更好地理解如何利用 V2RayNG 进行安全和高效的上网操作。</p>
+<h2 data-start="303" data-end="320" class="">1. 什么是V2RayNG？</h2>
+<p data-start="322" data-end="461" class="">V2RayNG 是专为 Android 系统开发的 V2Ray 客户端，它支持多种代理协议，并为用户提供了灵活的网络配置功能。与其他代理工具相比，V2RayNG 提供了更高的灵活性，能够实现更复杂的流量路由、并发连接和动态端口调整，帮助用户在不同的网络环境中获得更好的网络连接。</p>
+<p data-start="463" data-end="587" class="">V2RayNG 的核心优势在于支持多个协议，并能够根据需求自动切换节点，提供最优的连接方案。用户可以通过 V2RayNG 配置不同的代理协议，如 VMess、Shadowsocks 和 SSR等，以便突破地域限制，进行科学上网，访问全球的各种服务。</p>
+<h2 data-start="589" data-end="604" class="">2. 什么是SSR节点？</h2>
+<p data-start="606" data-end="732" class="">SSR（ShadowsocksR）是对传统 Shadowsocks 协议的一种增强，它通过对数据进行混淆处理，提升了对抗网络封锁和审查的能力。SSR 在多个网络受限的地区广泛应用，尤其在中国大陆等网络审查严格的地方，SSR 的稳定性和速度表现更为优越。</p>
+<p data-start="734" data-end="760" class="">SSR 节点通常由服务商提供，包含以下几个关键信息：</p>
+<ul data-start="761" data-end="978">
+<li data-start="761" data-end="807" class="" style="">
+<p data-start="763" data-end="807" class=""><strong data-start="763" data-end="772">服务器地址</strong>（Server Address）：SSR 服务器的 IP 地址或域名。</p>
+</li>
+<li data-start="808" data-end="836" class="" style="">
+<p data-start="810" data-end="836" class=""><strong data-start="810" data-end="817">端口号</strong>（Port）：用于连接服务器的端口号。</p>
+</li>
+<li data-start="837" data-end="864" class="" style="">
+<p data-start="839" data-end="864" class=""><strong data-start="839" data-end="845">密码</strong>（Password）：用于认证的密码。</p>
+</li>
+<li data-start="865" data-end="905" class="" style="">
+<p data-start="867" data-end="905" class=""><strong data-start="867" data-end="875">加密方式</strong>（Encryption Method）：用于加密数据的算法。</p>
+</li>
+<li data-start="906" data-end="938" class="" style="">
+<p data-start="908" data-end="938" class=""><strong data-start="908" data-end="914">协议</strong>（Protocol）：协议类型，通常为 SSR。</p>
+</li>
+<li data-start="939" data-end="978" class="" style="">
+<p data-start="941" data-end="978" class=""><strong data-start="941" data-end="949">混淆方式</strong>（Obfuscation）：用于混淆网络流量，防止被监测。</p>
+</li>
+</ul>
+<p data-start="980" data-end="1031" class="">通过 SSR 节点，用户可以实现数据的加密传输，并通过多种加密方式保护隐私，避免在网络中被监控或追踪。</p>
+<h2 data-start="1033" data-end="1051" class="">3. V2RayNG支持的协议</h2>
+<p data-start="1053" data-end="1096" class="">V2RayNG 支持多种协议，用户可以根据自己的需求选择最适合的协议。常见的协议包括：</p>
+<ul data-start="1098" data-end="1314">
+<li data-start="1098" data-end="1148" class="" style="">
+<p data-start="1100" data-end="1148" class=""><strong data-start="1100" data-end="1109">VMess</strong>：V2Ray 的核心协议，适用于复杂的网络环境，具有很强的隐蔽性和抗封锁能力。</p>
+</li>
+<li data-start="1149" data-end="1206" class="" style="">
+<p data-start="1151" data-end="1206" class=""><strong data-start="1151" data-end="1166">Shadowsocks</strong>：传统的代理协议，提供较好的加密和传输速度，但可能在网络封锁较强的地区受到限制。</p>
+</li>
+<li data-start="1207" data-end="1263" class="" style="">
+<p data-start="1209" data-end="1263" class=""><strong data-start="1209" data-end="1216">SSR</strong>：相比 Shadowsocks，SSR 增加了更多的混淆方式，适合在较为严格的网络环境中使用。</p>
+</li>
+<li data-start="1264" data-end="1314" class="" style="">
+<p data-start="1266" data-end="1314" class=""><strong data-start="1266" data-end="1275">VLess</strong>：V2Ray 新增的一种协议，具有更高的性能和安全性，适合高匿名性需求的用户。</p>
+</li>
+</ul>
+<p data-start="1316" data-end="1378" class="">这些协议的多样性使得 V2RayNG 成为一款非常灵活的网络工具，用户可以根据实际情况选择不同的协议，以获得更好的上网体验。</p>
+<h2 data-start="1380" data-end="1395" class="">4. 如何添加SSR节点</h2>
+<p data-start="1397" data-end="1437" class="">添加 SSR 节点是使用 V2RayNG 的核心操作之一。以下是详细的添加步骤：</p>
+<h3 data-start="1439" data-end="1456" class="">4.1 获取SSR节点信息</h3>
+<p data-start="1458" data-end="1525" class="">在使用 V2RayNG 之前，您需要获得有效的 SSR 节点信息。一般来说，SSR 节点信息由服务提供商提供，您可以通过以下方式获取：</p>
+<ul data-start="1527" data-end="1611">
+<li data-start="1527" data-end="1562" class="" style="">
+<p data-start="1529" data-end="1562" class=""><strong data-start="1529" data-end="1538">付费服务商</strong>：选择信誉良好的 SSR 服务商，购买节点信息。</p>
+</li>
+<li data-start="1563" data-end="1611" class="" style="">
+<p data-start="1565" data-end="1611" class=""><strong data-start="1565" data-end="1573">社区分享</strong>：一些网络社区或论坛分享免费的 SSR 节点，您可以根据需要选择合适的节点。</p>
+</li>
+</ul>
+<p data-start="1613" data-end="1638" class="">获取到 SSR 节点信息后，确保以下信息正确无误：</p>
+<ul data-start="1639" data-end="1767">
+<li data-start="1639" data-end="1666" class="" style="">
+<p data-start="1641" data-end="1666" class=""><strong data-start="1641" data-end="1650">服务器地址</strong>（Server Address）</p>
+</li>
+<li data-start="1667" data-end="1682" class="" style="">
+<p data-start="1669" data-end="1682" class=""><strong data-start="1669" data-end="1676">端口号</strong>（Port）</p>
+</li>
+<li data-start="1683" data-end="1701" class="" style="">
+<p data-start="1685" data-end="1701" class=""><strong data-start="1685" data-end="1691">密码</strong>（Password）</p>
+</li>
+<li data-start="1702" data-end="1731" class="" style="">
+<p data-start="1704" data-end="1731" class=""><strong data-start="1704" data-end="1712">加密方式</strong>（Encryption Method）</p>
+</li>
+<li data-start="1732" data-end="1750" class="" style="">
+<p data-start="1734" data-end="1750" class=""><strong data-start="1734" data-end="1740">协议</strong>（Protocol）</p>
+</li>
+<li data-start="1751" data-end="1767" class="" style="">
+<p data-start="1753" data-end="1767" class=""><strong data-start="1753" data-end="1761">混淆方式</strong>（Obfs）</p>
+</li>
+</ul>
+<h3 data-start="1769" data-end="1786" class="">4.2 添加SSR节点步骤</h3>
+<p data-start="1788" data-end="1819" class="">下面是如何在 V2RayNG 中添加 SSR 节点的详细步骤：</p>
+<h4 data-start="1821" data-end="1847" class="">步骤 1：下载并安装 V2RayNG 应用</h4>
+<p data-start="1849" data-end="1908" class="">首先，确保您的设备已安装 V2RayNG 应用。如果尚未安装，可以在 Google Play 或其他应用市场下载安装。</p>
+<h4 data-start="1910" data-end="1933" class="">步骤 2：打开 V2RayNG 应用</h4>
+<p data-start="1935" data-end="1982" class="">启动 V2RayNG 应用后，您将看到主界面。在右上角，点击 “+” 图标，进入节点添加界面。</p>
+<h4 data-start="1984" data-end="2005" class="">步骤 3：手动输入SSR节点信息</h4>
+<p data-start="2007" data-end="2115" class="">在节点添加界面中，选择 “手动设置” 选项，您将看到一个输入框，在其中输入之前获取到的 SSR 节点信息，包括服务器地址、端口号、密码、加密方式、协议以及混淆方法。确认信息无误后，点击 “确认” 或 “保存” 按钮。</p>
+<h4 data-start="2117" data-end="2137" class="">步骤 4：选择并连接SSR节点</h4>
+<p data-start="2139" data-end="2217" class="">完成节点信息添加后，返回主界面，点击 “节点” 菜单，您会看到刚刚添加的 SSR 节点。选择该节点并点击 “连接” 按钮，V2RayNG 将尝试连接该节点。</p>
+<h4 data-start="2219" data-end="2233" class="">步骤 5：开始使用</h4>
+<p data-start="2235" data-end="2283" class="">如果连接成功，V2RayNG 会显示 VPN 状态为已连接。此时，您即可开始进行安全的上网操作。</p>
+<h2 data-start="2285" data-end="2303" class="">5. 添加SSR节点的常见问题</h2>
+<h3 data-start="2305" data-end="2322" class="">为什么使用SSR比SS好？</h3>
+<p data-start="2324" data-end="2394" class="">SSR 相较于 SS 能够有效对抗网络审查，更适合在网络环境严格的地区使用。SSR 增强了数据的混淆能力，使得它能够绕过防火墙的检测和封锁。</p>
+<h3 data-start="2396" data-end="2415" class="">全网SSR节点补充在哪里查找？</h3>
+<p data-start="2417" data-end="2478" class="">可以通过网络上的论坛、社区或相关网站寻找 SSR 节点分享。但在使用免费节点时，请特别注意隐私安全，避免使用不可靠的服务。</p>
+<h3 data-start="2480" data-end="2496" class="">能否手动输入SSR节点？</h3>
+<p data-start="2498" data-end="2551" class="">是的，V2RayNG 完全支持手动输入 SSR 节点信息，用户只需按照上述步骤在配置界面输入节点数据即可。</p>
+<h3 data-start="2553" data-end="2568" class="">频繁掉线的原因是什么？</h3>
+<p data-start="2570" data-end="2588" class="">SSR 节点掉线可能是由于以下原因：</p>
+<ul data-start="2589" data-end="2659">
+<li data-start="2589" data-end="2602" class="" style="">
+<p data-start="2591" data-end="2602" class="">节点不稳定或服务中断。</p>
+</li>
+<li data-start="2603" data-end="2619" class="" style="">
+<p data-start="2605" data-end="2619" class="">网络环境差，导致连接不稳定。</p>
+</li>
+<li data-start="2620" data-end="2638" class="" style="">
+<p data-start="2622" data-end="2638" class="">防火墙或安全软件拦截了网络连接。</p>
+</li>
+<li data-start="2639" data-end="2659" class="" style="">
+<p data-start="2641" data-end="2659" class="">SSR 协议与系统或其他软件不兼容。</p>
+</li>
+</ul>
+<h2 data-start="2661" data-end="2671" class="">6. FAQs</h2>
+<h3 data-start="2673" data-end="2704" class="">Q1: V2RayNG 可以添加多少个 SSR 节点？</h3>
+<p data-start="2706" data-end="2776" class="">V2RayNG 对 SSR 节点的数量没有具体限制，用户可以根据需求添加多个节点。为了更好地管理节点，建议定期清理掉不再使用或已失效的节点。</p>
+<h3 data-start="2778" data-end="2796" class="">Q2: 如果添加失败怎么办？</h3>
+<p data-start="2798" data-end="2880" class="">如果添加节点失败，首先检查输入的节点信息是否准确无误。其次，确保网络连接正常，且 SSR 服务处于运行状态。如果问题仍然存在，尝试更新应用程序或联系服务商获取支持。</p>
+<h3 data-start="2882" data-end="2909" class="">Q3: V2RayNG 需要开启 VPN 吗？</h3>
+<p data-start="2911" data-end="2972" class="">V2RayNG 本身集成了 VPN 功能，因此使用时不需要额外开启其他 VPN 服务。只需要连接正确的 SSR 节点即可。</p>
+<h2 data-start="2974" data-end="2982" class="">7. 总结</h2>
+<p data-start="2984" data-end="3167" class="">通过本文的详细介绍，您可以轻松掌握如何在 V2RayNG 中添加 SSR 节点，实现更加稳定、安全的科学上网体验。随着互联网技术的不断发展，隐私保护和网络安全问题日益重要，选择合适的工具和节点将成为用户上网的基本保障。如果您在操作过程中遇到任何问题，可以参考本文提供的常见问题解答，或进一步查询相关资料。希望您能够顺利配置 V2RayNG，畅享自由、安全的网络世界。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112608.htm">为什么Shadowrocket不好使？常见问题与解决方法全解析</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-96873.htm" title="Clash翻墙时WiFi断网问题解析与实用解决方案">Clash翻墙时WiFi断网问题解析与实用解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-111913.htm" title="深入探究 Clash 100 L：全面指南与使用技巧">深入探究 Clash 100 L：全面指南与使用技巧</a></li>
+                        <li class="py-2"><a href="/news/article-96134.htm" title="小火箭Shadowrocket免费节点使用全攻略">小火箭Shadowrocket免费节点使用全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-101953.htm" title="狩猎高手养成记：超详细《Hunting Clash》全面攻略与实战技巧解析">狩猎高手养成记：超详细《Hunting Clash》全面攻略与实战技巧解析</a></li>
+                        <li class="py-2"><a href="/news/article-109439.htm" title="Clash链深度剖析：开启高速低门槛的区块链新时代">Clash链深度剖析：开启高速低门槛的区块链新时代</a></li>
+                        <li class="py-2"><a href="/news/article-101205.htm" title="最便宜又好用的科学上网方法全揭秘">最便宜又好用的科学上网方法全揭秘</a></li>
+                        <li class="py-2"><a href="/news/article-103627.htm" title="深度解析Vmess53端口：配置与使用教程全解析">深度解析Vmess53端口：配置与使用教程全解析</a></li>
+                        <li class="py-2"><a href="/news/article-108614.htm" title="Clash无法设置网络的详细解析与解决方案">Clash无法设置网络的详细解析与解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-112261.htm" title="如何在智能电视上安装Clash：完整的安装与配置指南">如何在智能电视上安装Clash：完整的安装与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-109441.htm" title="全面解析手机与电脑端V2Ray的原理与应用：从理论到实战的全景指南">全面解析手机与电脑端V2Ray的原理与应用：从理论到实战的全景指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">34</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= about-section end ========================= -->
+        <!-- ========================= footer start ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p>
+                    免费Clash机场 节点官网 版权所有 Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= footer end ========================= -->
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+    <!-- ========================= JS here ========================= -->
+    <script src="/assets/website/js/frontend/clashnodegithub/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodegithub/bootstrap-5.0.0-beta2.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodegithub/tiny-slider.js"></script>
+    <script src="/assets/website/js/frontend/clashnodegithub/wow.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodegithub/polyfill.js"></script>
+    <script src="/assets/website/js/frontend/clashnodegithub/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
