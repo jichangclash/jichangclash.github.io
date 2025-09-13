@@ -1,4 +1,4 @@
-# 免费Clash机场 | 9月7日18.5M/S|免费Shadowrocket/SSR/Clash/V2ray订阅链接  更新时间 2025-09-07 08:02:55
+# 免费Clash机场 | 9月13日21M/S|免费Clash/SSR/V2ray/Shadowrocket订阅链接  更新时间 2025-09-13 09:59:51
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://jichangclash.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://jichangclash.github.io/uploads/2025/09/0-20250907.yaml
-- https://jichangclash.github.io/uploads/2025/09/1-20250907.yaml
-- https://jichangclash.github.io/uploads/2025/09/2-20250907.yaml
-- https://jichangclash.github.io/uploads/2025/09/3-20250907.yaml
-- https://jichangclash.github.io/uploads/2025/09/4-20250907.yaml
+- https://jichangclash.github.io/uploads/2025/09/0-20250913.yaml
+- https://jichangclash.github.io/uploads/2025/09/1-20250913.yaml
+- https://jichangclash.github.io/uploads/2025/09/2-20250913.yaml
+- https://jichangclash.github.io/uploads/2025/09/3-20250913.yaml
+- https://jichangclash.github.io/uploads/2025/09/4-20250913.yaml
 
 ### V2ray订阅链接
 
-- https://jichangclash.github.io/uploads/2025/09/0-20250907.txt
-- https://jichangclash.github.io/uploads/2025/09/1-20250907.txt
-- https://jichangclash.github.io/uploads/2025/09/2-20250907.txt
-- https://jichangclash.github.io/uploads/2025/09/3-20250907.txt
-- https://jichangclash.github.io/uploads/2025/09/4-20250907.txt
+- https://jichangclash.github.io/uploads/2025/09/0-20250913.txt
+- https://jichangclash.github.io/uploads/2025/09/1-20250913.txt
+- https://jichangclash.github.io/uploads/2025/09/2-20250913.txt
+- https://jichangclash.github.io/uploads/2025/09/3-20250913.txt
+- https://jichangclash.github.io/uploads/2025/09/4-20250913.txt
 
 ### Sing-box订阅链接
 
-- https://jichangclash.github.io/uploads/2025/09/20250907.json
+- https://jichangclash.github.io/uploads/2025/09/20250913.json
 
 ## 更多clash节点订阅 ：
 
