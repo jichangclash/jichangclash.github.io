@@ -366,9 +366,9 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 在移动网络的优势是什么？</h5></div>
     <div class="panel-body">
-        Shadowrocket 可测量节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点会优先使用，保证网页浏览、视频和游戏的速度和稳定性，提高整体网络体验。<hr />    </div>
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和节点切换，可提升网页浏览、视频播放和游戏连接的稳定性和流畅度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 使用哪种加密算法？</h5></div>
@@ -376,9 +376,9 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
         Hysteria2 默认使用 AEAD 加密算法（如 ChaCha20-Poly1305），并可结合 TLS 层加密保障安全性。其设计兼顾速度与抗干扰能力，适合高延迟跨境网络环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 在移动网络的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何优化视频播放？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和节点切换，可提升网页浏览、视频播放和游戏连接的稳定性和流畅度。<hr />    </div>
+        通过分流规则，将流媒体域名匹配到高速节点，而其他流量走备用节点。保证视频播放流畅，同时节约带宽资源，提升整体网络速度和体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式适合移动网络吗？</h5></div>
@@ -386,14 +386,9 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
         XTLS 模式降低加密开销，减少握手次数，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-Go 的端口不可达怎么办？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
     <div class="panel-body">
-        检查服务器防火墙是否开放对应端口，同时确认客户端和服务器端端口一致。还可以尝试更换节点或端口，确保 TLS 证书有效以保证连接成功。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 支持哪些类型的分流规则？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持域名、IP、端口、协议类型、用户标签等多种分流规则。结合策略组，可实现精细化流量管理，满足视频加速、广告屏蔽和游戏优化等多样化需求。<hr />    </div>
+        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
@@ -401,19 +396,24 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
         支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan-Go 的端口不可达怎么办？</h5></div>
+    <div class="panel-body">
+        检查服务器防火墙是否开放对应端口，同时确认客户端和服务器端端口一致。还可以尝试更换节点或端口，确保 TLS 证书有效以保证连接成功。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 可测量节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点会优先使用，保证网页浏览、视频和游戏的速度和稳定性，提高整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 支持哪些类型的分流规则？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持域名、IP、端口、协议类型、用户标签等多种分流规则。结合策略组，可实现精细化流量管理，满足视频加速、广告屏蔽和游戏优化等多样化需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 节点延迟排序如何提升访问体验？</h5></div>
     <div class="panel-body">
-        Shadowrocket 会测速节点延迟和丢包率，并优先使用低延迟节点。结合策略组和分流规则，可保证网页、视频和游戏流量通过最优节点，提高访问速度和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
-    <div class="panel-body">
-        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何优化视频播放？</h5></div>
-    <div class="panel-body">
-        通过分流规则，将流媒体域名匹配到高速节点，而其他流量走备用节点。保证视频播放流畅，同时节约带宽资源，提升整体网络速度和体验。    </div>
+        Shadowrocket 会测速节点延迟和丢包率，并优先使用低延迟节点。结合策略组和分流规则，可保证网页、视频和游戏流量通过最优节点，提高访问速度和稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -442,16 +442,16 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-13-node-share.htm" title="免费Clash机场 | 10月13日18.1M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接">免费Clash机场 | 10月13日18.1M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-22-free-node-subscribe-links.htm" title="免费Clash机场 | 10月22日19.2M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点订阅链接">免费Clash机场 | 10月22日19.2M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-19-vless-windows.htm" title="免费Clash机场 | 10月19日19.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅链接">免费Clash机场 | 10月19日19.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-vless-node.htm" title="免费Clash机场 | 10月12日22M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅链接">免费Clash机场 | 10月12日22M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-31-vless-windows.htm" title="免费Clash机场 | 10月31日21M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅链接">免费Clash机场 | 10月31日21M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-18-free-vless-node.htm" title="免费Clash机场 | 10月18日21.2M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅链接">免费Clash机场 | 10月18日21.2M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-23-free-vless-node.htm" title="免费Clash机场 | 10月23日19.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅链接">免费Clash机场 | 10月23日19.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-3-latest-vless-node.htm" title="免费Clash机场 | 11月3日21.6M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅链接">免费Clash机场 | 11月3日21.6M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅链接</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-6-vless-node.htm" title="免费Clash机场 | 10月6日22.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅链接">免费Clash机场 | 10月6日22.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-free-node-subscribe-links.htm" title="免费Clash机场 | 10月26日21.9M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅链接">免费Clash机场 | 10月26日21.9M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-vless-node.htm" title="免费Clash机场 | 10月21日21.9M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅链接">免费Clash机场 | 10月21日21.9M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-9-latest-vless-node.htm" title="免费Clash机场 | 10月9日21.5M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅链接">免费Clash机场 | 10月9日21.5M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-4-vless-node-github.htm" title="免费Clash机场 | 10月4日20.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅链接">免费Clash机场 | 10月4日20.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-6-node-share-links.htm" title="免费Clash机场 | 11月6日20.4M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅链接">免费Clash机场 | 11月6日20.4M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-7-free-vless-node.htm" title="免费Clash机场 | 11月7日19.3M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅链接">免费Clash机场 | 11月7日19.3M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-13-node-share.htm" title="免费Clash机场 | 10月13日18.1M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接">免费Clash机场 | 10月13日18.1M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-13-vless-windows.htm" title="免费Clash机场 | 11月13日22.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅链接">免费Clash机场 | 11月13日22.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-8-free-node-subscribe.htm" title="免费Clash机场 | 11月8日22.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅链接">免费Clash机场 | 11月8日22.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-vless-node-github.htm" title="免费Clash机场 | 10月15日22.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅链接">免费Clash机场 | 10月15日22.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅链接</a></li>
                     </ul>
     </div>
 </div>
@@ -463,7 +463,7 @@ A: 虽然技术上可行，但不建议多个用户共用一个账户，容易�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
