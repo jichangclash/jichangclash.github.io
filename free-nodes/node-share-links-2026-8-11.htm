@@ -353,24 +353,24 @@ never_direct allow all
         支持。TUN 模式拦截系统 IP 层流量，实现全局代理，确保游戏和其他应用的 UDP/TCP 流量都走代理节点，从而降低延迟，提高游戏体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
-    <div class="panel-body">
-        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
-    <div class="panel-body">
-        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的规则模式有哪些？</h5></div>
     <div class="panel-body">
         Clash 提供三种主要模式：Global（全局代理）、Rule（规则代理）和Direct（直连）。全局模式会让所有流量通过代理；规则模式根据规则文件自动分流；直连模式则完全不经过代理。用户可根据需求灵活切换。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan TLS 伪装域名如何提高抗封锁能力？</h5></div>
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
     <div class="panel-body">
-        通过选择真实可访问域名并使用有效证书，Trojan 流量可以完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
+        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
+    <div class="panel-body">
+        通过选择真实可访问域名并使用有效证书，Trojan 流量可完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
+    <div class="panel-body">
+        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 显示证书错误，如何修复？</h5></div>
@@ -383,19 +383,19 @@ never_direct allow all
         在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
-    <div class="panel-body">
-        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 是什么？</h5></div>
     <div class="panel-body">
         Sing-box 是新一代多协议代理框架，支持 VMess、VLess、Trojan、Hysteria、ShadowTLS 等协议。它比传统 V2Ray 更轻量化、模块化，并针对移动端和 Linux 系统进行了性能优化，受到开发者和高级用户的欢迎。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
+    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
     <div class="panel-body">
-        通过选择真实可访问域名并使用有效证书，Trojan 流量可完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。    </div>
+        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan TLS 伪装域名如何提高抗封锁能力？</h5></div>
+    <div class="panel-body">
+        通过选择真实可访问域名并使用有效证书，Trojan 流量可以完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -443,16 +443,16 @@ never_direct allow all
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-8-9.htm" title="免费Clash机场 | 8月9日20.7M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅链接">免费Clash机场 | 8月9日20.7M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-free-node-subscribe.htm" title="免费Clash机场 | 8月8日18.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅链接">免费Clash机场 | 8月8日18.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-20-vless-windows.htm" title="免费Clash机场 | 7月20日21.8M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接">免费Clash机场 | 7月20日21.8M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-8-5.htm" title="免费Clash机场 | 8月5日20.3M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅链接">免费Clash机场 | 8月5日20.3M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-node-2026-8-21.htm" title="免费Clash机场 | 8月21日21.7M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅链接">免费Clash机场 | 8月21日21.7M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-vless-node-github.htm" title="免费Clash机场 | 8月14日19.3M/S|免费Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅链接">免费Clash机场 | 8月14日19.3M/S|免费Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅链接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-12-vless-node-share.htm" title="免费Clash机场 | 8月12日18.7M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接">免费Clash机场 | 8月12日18.7M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-8-7.htm" title="免费Clash机场 | 8月7日18.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅链接">免费Clash机场 | 8月7日18.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-22-latest-vless-node.htm" title="免费Clash机场 | 7月22日22.9M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅链接">免费Clash机场 | 7月22日22.9M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-19-vless-github.htm" title="免费Clash机场 | 7月19日21.3M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接">免费Clash机场 | 7月19日21.3M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-4-node-share.htm" title="免费Clash机场 | 8月4日19.6M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅链接">免费Clash机场 | 8月4日19.6M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅链接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-16-free-node-subscribe.htm" title="免费Clash机场 | 8月16日18.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点订阅链接">免费Clash机场 | 8月16日18.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-vless-node-share.htm" title="免费Clash机场 | 8月24日22.4M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/V2ray节点/SSR节点订阅链接">免费Clash机场 | 8月24日22.4M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/V2ray节点/SSR节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-3.htm" title="免费Clash机场 | 9月3日21.1M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接">免费Clash机场 | 9月3日21.1M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-18-free-subscribe-node.htm" title="免费Clash机场 | 8月18日21.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅链接">免费Clash机场 | 8月18日21.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-8-17.htm" title="免费Clash机场 | 8月17日19.9M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅链接">免费Clash机场 | 8月17日19.9M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-11.htm" title="免费Clash机场 | 8月11日21.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅链接">免费Clash机场 | 8月11日21.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-subscribe-node.htm" title="免费Clash机场 | 8月28日21.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点订阅链接">免费Clash机场 | 8月28日21.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点订阅链接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-9-1.htm" title="免费Clash机场 | 9月1日20.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅链接">免费Clash机场 | 9月1日20.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅链接</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -464,10 +464,10 @@ never_direct allow all
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
